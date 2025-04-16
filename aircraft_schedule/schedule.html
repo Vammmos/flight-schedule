@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Schedule Flight | Flying Machine</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="service.js" defer></script>
+</head>
+<body>
+  <header>✈️ Flying Machine - Schedule Flight</header>
+
+  <div class="container">
+    <h1>Flight Scheduling Form</h1>
+    <form action="insert_flight.php" method="post" onsubmit="return validateForm()">
+      <label for="aircraft_name">Select Aircraft:</label>
+      <select id="aircraft_name" name="aircraft_name" required>
+        <option value="">-- Choose an aircraft --</option>
+        <option value="Boeing 737">Boeing 737</option>
+        <option value="Airbus A320">Airbus A320</option>
+        <option value="Embraer E190">Embraer E190</option>
+        <option value="Cessna 208">Cessna 208</option>
+        <option value="Bombardier CRJ900">Bombardier CRJ900</option>
+      </select>
+
+      <label for="departure_location">Departure Location:</label>
+      <input type="text" id="departure_location" name="departure_location" required>
+
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" required>
+
+      <label for="departure_time">Departure Time:</label>
+      <input type="datetime-local" id="departure_time" name="departure_time" required>
+
+      <button type="submit">Submit Flight</button>
+    </form>
+  </div>
+
+  <footer>
+    Need Help? Contact support@flyingmachine.com or call +91 98765 43210
+  </footer>
+</body>
+</html>
