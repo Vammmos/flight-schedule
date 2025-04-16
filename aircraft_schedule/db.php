@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "12345";
-$database = "aircraft_db";
+$username = "";
+$password = "";
+$database = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
